@@ -1,0 +1,17 @@
+name = "mathlib-work"
+version = "0.1.0"
+defaultTargets = ["MathlibWork", "MathlibWorkTests"]
+
+[leanOptions]
+warningAsError = true
+
+[[lean_lib]]
+name = "MathlibWork"
+
+[[lean_lib]]
+name = "MathlibWorkTests"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "79d0395a1825a6264ad5d269e35e60537518955e"
